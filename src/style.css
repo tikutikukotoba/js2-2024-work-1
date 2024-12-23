@@ -1,44 +1,48 @@
+/* ページ全体のスタイル */
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
+  font-family: Arial, sans-serif; /* フォント */
+  display: flex; /* コンテンツを中央に配置 */
+  justify-content: center; /* 横方向で中央寄せ */
+  align-items: center; /* 縦方向で中央寄せ */
+  height: 100vh; /* ページ全体の高さ */
+  margin: 0; /* デフォルトのマージンを削除 */
+  background-color: #f0f0f0; /* 背景色 */
 }
 
+/* キーボード全体のスタイル */
 .keyboard {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: flex; /* キーボード全体を縦方向に配置 */
+  flex-direction: column; /* 各行を縦方向に並べる */
+  gap: 10px; /* 各行の間隔 */
 }
 
+/* 各行のスタイル */
 .row {
-  display: flex;
-  gap: 5px;
+  display: flex; /* 行の中でキーを横並びにする */
+  gap: 5px; /* 各キーの間隔 */
 }
 
+/* 各キーのスタイル */
 .key {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: default;
-  user-select: none;
-  transition: background-color 0.2s, transform 0.2s;
+  width: 40px; /* 各キーの幅 */
+  height: 40px; /* 各キーの高さ */
+  display: flex; /* 中央揃え用 */
+  justify-content: center; /* 横方向で中央揃え */
+  align-items: center; /* 縦方向で中央揃え */
+  background-color: #fff; /* 背景色 */
+  border: 2px solid #ccc; /* 枠線 */
+  border-radius: 5px; /* 角を丸くする */
+  font-size: 16px; /* 文字サイズ */
+  font-weight: bold; /* 文字を太くする */
+  text-transform: uppercase; /* 文字を大文字に変換 */
+  cursor: default; /* ポインタの形状を通常の矢印に設定 */
+  user-select: none; /* テキスト選択を無効化 */
+  transition: background-color 0.2s, transform 0.2s; /* アニメーション効果 */
 }
 
+/* キーが押されたときのスタイル */
 .key.active {
-  background-color: #4caf50;
-  transform: scale(1.1);
-  border-color: #388e3c;
+  background-color: #4caf50; /* 押されたキーの背景色 */
+  transform: scale(1.1); /* 押されたときの拡大効果 */
+  border-color: #388e3c; /* 押されたときの枠線の色 */
 }
-
